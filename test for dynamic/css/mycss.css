@@ -1,0 +1,776 @@
+html,body{
+  background-color: #ffcc33;
+}
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  .sidebar-fontie{
+    color:#8264a3;
+    font-size: 21PX;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .topbar-fontie{
+    color:#8264a3;
+    font-size: 17PX;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .fontie_bottom1{
+    font-size:38px;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+.fontie_bottom2{
+  font-size:15px;
+  color:#8264a3;
+  text-align:center;
+}
+
+  .iurp{
+    text-align:center;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: bold;
+  }
+  .box{
+    position:relative;
+    background-color: #e7e7e7;
+    text-align: center;
+    font-weight: bold;
+    color:#8264a3;
+    padding-top: 35px;
+    margin:10px;
+    font-size: 11px;
+    cursor:pointer;
+    width:80px;
+    height:80px;
+    float:left;
+    box-shadow: 4px 4px 4px #d7d7d7;
+    transition: all 0.5s ease;
+  }
+  .box:hover{
+    background-color:#e74c3c;
+    color: white;
+  }
+
+  .mactive{
+    background-color:#e74c3c;
+    color: white;
+  }
+
+  .nomargin{
+    margin-left: 0px !important;
+    margin-right:0px !important;
+  }
+
+  .menu-wrapper{
+    margin-top: 10px;
+    margin-left: 10%;
+    position:relative;
+    text-align: center;
+  }
+
+  .menu-wrapper .nav{
+    width: 95%;
+  }
+  .sidebar-menu{
+    position:fixed;
+    min-width:250px;
+    height:100%;
+    background-color: white;
+    box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.75);
+    z-index: 10000;
+  }
+  .pagecont{
+    background-color: red;
+    height:100px;
+    width:100%;
+  }
+  .top-menu{
+    position: fixed;
+    height: 180px;
+    width: 100%;
+    background-color: #ffcc33;
+    box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.75);
+    visibility: hidden;
+    z-index: 10000;
+  }
+
+  .social-icons{
+    position:relative;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+
+  .bottom-socials{
+    font-size: 30px;
+    color: #797979;
+  }
+
+  .bottom-socials{
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .fa-google-plus-square:hover{
+    color: #dd4b39;
+  }
+
+  .fa-linkedin-square:hover{
+    color: #007bb5;
+  }
+
+  .fa-facebook-square:hover{
+    color:  #3b5998;
+  }
+
+  .carousel-indicators li{
+    background: #7f7f7f;
+  }
+  .carousel-indicators{
+    position: absolute;
+  }
+  .carousel-indicators .active{
+    background: #ff6600;
+  }
+
+  .carousel-inner .item{
+    margin:0px auto;
+  }
+
+  .home-btm{
+    background-color: #ffcc33;
+    width: 100%%;
+    padding-top: 3%;
+    -webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 10px 0 5px -5px #888;
+    padding: 40px;
+  }
+
+  .menu-collapse{
+    background-color: #dfac13;
+    height:44px;
+    width:44px;
+    font-size: 30px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  .rsudc-primary a,.sem a,.year a{
+    font-size:28px;
+    color:#55552f !important;
+    margin-right: 40px;
+  }
+
+  .sem:hover a,.year:hover a{
+    color: #ffffff !important;
+  }
+
+  .tab a{
+    font-size:28px;
+    color:#55552f !important;
+    margin-right: 40px;
+  }
+
+  .tab:hover a{
+    color: #ffffff !important;
+  }
+
+  .gal-current{
+    color: white !important;
+  }
+
+  .gal-gridcontainer{
+    margin-left: -20px;
+  }
+  .gridBox{
+    text-align: center;
+    position:relative;
+    width:25%;
+    height:20vh;
+    float: left;
+  }
+
+  .gal-gridBox{
+    text-align: center;
+    position:relative;
+    width:25%;
+    height:20vh;
+    float: left;
+    transition:-webkit-filter 0.5s ease,-moz-filter 0.5s ease,-ms-filter 0.5s ease,-o-filter 0.5s ease,filter 0.5s ease;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  .gridOverlay{
+    background-color: black;
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+    transition:all 0.5s ease;
+  }
+  .gridBox:hover {
+    box-shadow: 1px 1px 10px black;
+    }
+  .gridBox:hover > .gridOverlay{
+    opacity:0.2;
+    background-color:#ffCC33;
+  }
+
+  .gridText{
+    position:relative;
+    margin: 10% auto;
+    padding-top: 50px;
+    z-index:100;
+    color:white;
+  }
+
+  .modal-dialog{
+    width: 100%;
+    height: 20vh;
+    padding-left: 260px;
+    padding-right:30px;
+    opacity: 0.9;
+  }
+  .playpage{
+    position: absolute;
+    width: 100%;
+    display:none;
+  }
+
+.group a.current{
+  color:white !important;
+}
+
+.gal-group a.gal-current{
+  color:white !important;
+}
+
+.thumbnail {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: auto;
+}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+.carousel .glyphicon{
+  color:red;
+}
+.container-fluid{
+  padding: 0px;
+}
+.stdwrk-sem-group .current,.stdwrk-year-group .current{
+  color: white !important;
+}
+
+.alumni-gridbox{
+  position:relative;
+  width:23%;
+  height:15vh;
+  float: left;
+  padding: 0px !important;
+}
+
+.alumni-gridOverlay{
+    background-color: black;
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+    cursor: pointer;
+    transition:all 0.5s ease;
+  }
+
+.alumni-gridbox:hover {
+  box-shadow: 1px 1px 10px black;
+}
+
+.alumni-gridbox:hover > .alumni-gridOverlay{
+  opacity:0.2;
+  background-color:#ffCC33;
+}
+
+.alumni-year a{
+  font-size:22px;
+  color:#55552f !important;
+  margin-right: 10px;
+}
+
+.alumni-year:hover a{
+  color: #ffffff !important;
+}
+
+.alumni-year a.current{
+  color: white !important;
+}
+
+.alm-img{
+  width: 98%;
+  height: 20vh;
+}
+
+.almname{
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 18vh;
+}
+
+#igal .modal-dialog{
+  margin-left: 10px;
+  width:98%;
+  opacity: 1;
+}
+#myModal{
+  visibility: hidden;
+}
+
+#playground{
+  position:absolute;
+  height:100vh;
+  width:80%;
+  margin-left:250px;
+  background-color: #ffcc33;
+  overflow-x: hidden;
+}
+
+#collapsemenu{
+  position:fixed;
+  top:50px;
+  right:15%;
+  background-color:#ffdf80;
+  width:60%;
+  display: none;
+  z-index: 10000000;
+}
+
+#ihome{
+  min-height:100vh;
+}
+
+#almcontainer1{
+  padding: 10px auto !important;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+#almcontainer2{
+  padding: 10px auto !important;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+#almcontainer3{
+  padding: 10px auto !important;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+#almcontainer4{
+  padding: 10px auto !important;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+#almcontainer5{
+  padding: 10px auto !important;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+.primary-background{
+  background-color:#ffcc33
+}
+
+.sidebar-logo{
+  width:90px;
+  height:90px;
+}
+
+.topbar-logo{
+   width:60%;
+   height:60%;
+}
+
+.home-content{
+  height:80vh;
+  display:block;
+}
+
+.about-image{
+  width:100%;
+  height:auto;
+}
+
+.about-font1{
+  padding-left:4%;
+  padding-top:3%;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.about-font2{
+  padding-right:4%;
+  padding-top:3%;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.about-title-font{
+  color:white;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.about-p-font{
+  font-size:16px;
+}
+
+.playpage-padding{
+  padding-top:35px;
+  padding-left:25px;
+}
+
+.playpage-title-font{
+  font-size:2.5vw;
+}
+
+.playpage-info-font{
+  font-size:1.3vw;
+  padding-right:100px;
+}
+
+.people-nav-margin{
+  margin-top: 8.7vh;
+}
+
+.noborder{
+  border: none;
+}
+
+.nopadding{
+  padding: 0px !important;
+}
+
+.people-modal-title{
+  margin-bottom:0px;margin-top:5px;
+}
+
+.people-modal-info{
+  margin-top:0px;
+}
+
+.people-margin{
+  padding-left:25px;margin-top:10px;
+}
+
+.people-font1{
+  font-size:2vw;
+}
+
+.people-font2{
+  font-size:1.3vw;padding-right:100px;
+}
+
+.gallery-title-margin{
+  margin-top:8vh;margin-left:2vw;
+}
+
+.gallery-font1{
+  font-size:2.5vw;margin-bottom:0px;
+}
+
+.gallery-font2{
+  font-size:2.7vw;
+  font-weight:bold;
+  color:white;
+  margin-top:-13px;
+}
+
+.gallery-nav-margin{
+  margin-top: 6vh;
+}
+
+.backgroundcover{
+  background-size:cover;
+}
+
+.rsudc-font{
+  font-size:16px;
+}
+
+.rsudc-margin{
+  margin-right:15px;
+}
+
+.studentwork-nav-margin{
+  margin-top: 4.7vh;
+}
+
+.alumni-row-padding{
+  padding-left:25px;
+}
+
+.alumni-email-font{
+  font-weight:bold;
+  font-size:12px;
+}
+
+.alumni-designation-title-font{
+  font-size:15px;
+}
+
+.alumni-designation-font{
+  font-size:13px;
+}
+
+.contact-title-font{
+  color:white;
+  font-size:30px;
+  font-weight:bold;
+}
+
+.contact-address-font{
+  color:black;
+  font-size:30px;
+  font-weight:bold;
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.redborder{
+  border-color:red;
+}
+
+.font-27{
+  font-size:27px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-btm{
+    width: 100%;
+    position:relative;
+    top:0px;
+  }
+  .fontie_rs{
+    font-size: 17PX;
+  }
+  .iurp{
+    font-size: 19px;
+  }
+  .carousel-indicators{
+    visibility: hidden;
+  }
+  .modal-dialog{
+    margin-left: 0px;
+    width:100% !important;
+  }
+  .sidebar-menu{
+    display:none !important;
+  }
+  #playground{
+    width: 100%;
+    height: 90vh;
+    margin-top: 180px;
+    padding-left: 0px;
+    margin-left:0px;
+  }
+  .top-menu{
+    visibility: visible;
+    display:
+  }
+}
+
+/* section*/
+.message{
+  color:white;
+  background-color:red;
+  width:100%;
+  height:55px;
+  margin-top:25px;
+}
+
+.ppl-gridOverlay{
+  background-color:grey;
+  position: absolute;
+  width:100%;
+  height:100%;
+  opacity:0.8;
+  transition:all 0.5s ease;
+}
+
+.ppl-group a.current{
+  color: white !important;
+}
+
+.gridBox:hover > .ppl-gridOverlay{
+  opacity:0.2;
+  background-color:#ffCC33;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+#corefacultycontainer{
+  position: absolute;
+  width:25%;
+/*  background-color: red;  */
+  padding-top:50px;
+}
+
+#visitingfacultycontainer{
+  position: absolute;
+  left:32%;
+/*  background-color: yellow;  */
+  width:62%;
+  padding-top:50px;
+}
+
+.corefacultyBox{
+  float:left;
+  float:top;
+  width:110px;
+  height:110px;
+    transition:all 0.5s ease;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.visitingfacultyBox{
+  width:110px;
+  height:110px;
+  float:left;
+  float:top;
+
+  transition:all 0.5s ease;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.visitingfacultyBox:hover,.corefacultyBox:hover{
+  -webkit-filter: grayscale(00%);
+  -moz-filter: grayscale(00%);
+  -ms-filter: grayscale(00%);
+  -o-filter: grayscale(00%);
+  filter: grayscale(00%);
+}
+.uppertext{
+  font-size:33px;
+}
+
+#corefacultyname{
+  position:absolute;
+  bottom: -210px;
+}
+
+#visitingfacultyname{
+  position:absolute;
+  bottom: -50px;
+}
+
+.modalclass{
+ top:15%;
+ left: 5%;
+ right:5%;
+}
+
+.rsudcBox{
+  float:left;
+  float:top;
+  width:25%;
+  height:auto;
+  transition:all 0.5s ease;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.rsudcBox:hover{
+  -webkit-filter: grayscale(00%);
+  -moz-filter: grayscale(00%);
+  -ms-filter: grayscale(00%);
+  -o-filter: grayscale(00%);
+  filter: grayscale(00%);
+}
+
+#rsudc-institution-text{
+  padding-left:4%;
+  padding-top:3%;
+  padding-right:4%;
+  text-align:justify;
+  text-justify:inter-word
+}
+
+#rsudc-vision-text{
+  padding-left:4%;
+  padding-top:3%;
+  padding-right:4%;
+  text-align:justify;
+  text-justify:inter-word
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-btm{
+    width: 100%;
+    position:relative;
+    top:0px;
+  }
+  .fontie_rs{
+    font-size: 17PX;
+  }
+  .iurp{
+    font-size: 19px;
+  }
+  .carousel-indicators{
+    visibility: hidden;
+  }
+  .modal-dialog{
+    margin-left: 0px;
+    width:100% !important;
+  }
+  .sidebar-menu{
+    display:none !important;
+  }
+  #playground{
+    width: 100%;
+    margin-top: 180px;
+    padding-left: 0px;
+    margin-left:0px;
+  }
+  .top-menu{
+    visibility: visible;
+    display:block;
+  }
+
+}
